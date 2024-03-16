@@ -1,4 +1,5 @@
 @import './dist/css/tailwind.css';
+@import './dist/css/styles.css';
 
 .App {
   text-align: center;

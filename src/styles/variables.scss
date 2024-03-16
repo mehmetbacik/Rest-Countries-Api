@@ -1,8 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-$family: 'League Spartan', sans-serif;
-$size: 32px;
+$family: "Nunito Sans", sans-serif;
+$size: 16px;
 
 @mixin font {
     font-family: $family;
@@ -10,4 +10,9 @@ $size: 32px;
     line-height: normal;
 }
 
+$dark-blue: hsl(209, 23%, 22%);
+$very-dark-blue-bg: hsl(207, 26%, 17%);
+$very-dark-blue-tx: hsl(200, 15%, 8%);
+$dark-gray: hsl(0, 0%, 52%);
+$very-light-gray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
