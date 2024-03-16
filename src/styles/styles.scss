@@ -1,0 +1,13 @@
+@import "variables";
+
+body {
+    @include font;
+}
+
+@media (max-width: 425px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
