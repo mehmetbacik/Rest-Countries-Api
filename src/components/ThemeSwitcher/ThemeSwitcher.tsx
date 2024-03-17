@@ -1,7 +1,11 @@
-import React from "react";
+import React from 'react';
 
-const ThemeSwitcher = () => {
-  return <></>;
-};
+const ThemeSwitcher: React.FC = () => {
+    return (
+        <div>
+            {/* Tema değiştirici buraya gelecek */}
+        </div>
+    );
+}
 
 export default ThemeSwitcher;

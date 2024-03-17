@@ -1,12 +1,15 @@
 import React from 'react';
-import './App.css';
+import { getAllCountries } from './services/api';
+import { CountryList } from './components/CountryList';
 
-function App() {
-  return (
-    <div className="App">
+const App: React.FC = () => {
+    const countries = getAllCountries();
 
-    </div>
-  );
+    return (
+        <div>
+            <CountryList countries={countries} />
+        </div>
+    );
 }
 
 export default App;
