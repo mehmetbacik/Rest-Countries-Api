@@ -7,8 +7,12 @@ interface CountryListItemProps {
 
 const CountryListItem: React.FC<CountryListItemProps> = ({ country }) => {
     return (
-        <div>
-            {/* Ülke bilgileri buraya gelecek */}
+        <div className="country-list-item">
+            <img src={country.flag} alt={country.name} className="country-flag" />
+            <h2 className="country-name">{country.name}</h2>
+            <p className="country-population">Population: {country.population}</p>
+            <p className="country-region">Region: {country.region}</p>
+            <p className="country-capital">Capital: {country.capital}</p>
         </div>
     );
 }
