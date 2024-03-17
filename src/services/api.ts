@@ -1,0 +1,1 @@
+export { default as Data } from '../../public/data/data.json'
