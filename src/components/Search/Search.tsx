@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 
 interface SearchProps {
     onSearch: (query: string) => void;
@@ -15,6 +18,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
 
     return (
         <div className="flex items-center">
+            <FontAwesomeIcon icon={faSearch} />
             <input
                 type="text"
                 placeholder="Search for a country..."
