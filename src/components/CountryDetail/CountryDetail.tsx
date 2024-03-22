@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Country } from "../../types/country";
 
 interface CountryDetailProps {
@@ -7,26 +7,36 @@ interface CountryDetailProps {
 }
 
 const CountryDetail: React.FC<CountryDetailProps> = ({ countries }) => {
+  const navigate = useNavigate();
   const { alpha3Code } = useParams<{ alpha3Code: string }>();
 
   const country = countries.find(
     (country) => country.alpha3Code === alpha3Code
   );
 
+  const handleGoBack = () => {
+    navigate("/");
+  };
+
   if (!country) return <div>Country not found</div>;
 
-  // Border countries için tam adları bulma fonksiyonu
   const getBorderCountryNames = () => {
     return country.borders.map((borderCode) => {
       const borderCountry = countries.find(
         (country) => country.alpha3Code === borderCode
       );
-      return borderCountry ? borderCountry.name : ""; // Border ülke bulunamadıysa boş döndür
+      return borderCountry ? borderCountry.name : "";
     });
   };
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
+      <button
+        onClick={handleGoBack}
+        className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mb-4"
+      >
+        Back
+      </button>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <img
