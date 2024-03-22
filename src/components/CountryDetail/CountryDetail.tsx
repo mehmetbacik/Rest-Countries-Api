@@ -1,24 +1,18 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
 import { Country } from "../../types/country";
+import { useNavigate } from "react-router-dom";
 
 interface CountryDetailProps {
+  country: Country;
   countries: Country[];
 }
 
-const CountryDetail: React.FC<CountryDetailProps> = ({ countries }) => {
+const CountryDetail: React.FC<CountryDetailProps> = ({ country, countries }) => {
   const navigate = useNavigate();
-  const { alpha3Code } = useParams<{ alpha3Code: string }>();
-
-  const country = countries.find(
-    (country) => country.alpha3Code === alpha3Code
-  );
 
   const handleGoBack = () => {
     navigate("/");
   };
-
-  if (!country) return <div>Country not found</div>;
 
   const getBorderCountryNames = () => {
     return country.borders.map((borderCode) => {
