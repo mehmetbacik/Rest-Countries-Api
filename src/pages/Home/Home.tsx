@@ -59,11 +59,17 @@ const Home: React.FC = () => {
     };
 
     return (
-        <div>
+        <div className="themeHome">
             <Header />
-            <Search onSearch={handleSearch} />
-            <RegionFilter countries={allCountries} onRegionChange={handleRegionChange} />
-            <CountryList countries={filteredCountries} />
+            <main className="themeMain">
+                <div className="themeFilter flex justify-between px-12 py-10 items-center">
+                    <Search onSearch={handleSearch} />
+                    <RegionFilter countries={allCountries} onRegionChange={handleRegionChange} />
+                </div>
+                <div className="themeList">
+                    <CountryList countries={filteredCountries} />
+                </div>
+            </main>
         </div>
     );
 }

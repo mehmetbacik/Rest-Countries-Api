@@ -14,14 +14,30 @@ body.dark .countries-app header.themeHeader .themeLogoTx {
 body.dark .countries-app header.themeHeader .themeSwitcher {
   color: hsl(0, 0%, 100%);
 }
+body.dark .countries-app .themeHome main.themeMain {
+  background-color: hsl(207, 26%, 17%);
+}
+body.dark .countries-app .themeHome main.themeMain .themeFilter .themeSearch {
+  background-color: hsl(209, 23%, 22%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: hsl(0, 0%, 100%);
+}
 body.light .countries-app header.themeHeader {
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 100%);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 body.light .countries-app header.themeHeader .themeLogoTx {
   color: hsl(200, 15%, 8%);
 }
 body.light .countries-app header.themeHeader .themeSwitcher {
+  color: hsl(200, 15%, 8%);
+}
+body.light .countries-app .themeHome main.themeMain {
+  background-color: hsl(0, 0%, 98%);
+}
+body.light .countries-app .themeHome main.themeMain .themeFilter .themeSearch {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   color: hsl(200, 15%, 8%);
 }
 

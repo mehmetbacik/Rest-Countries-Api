@@ -17,14 +17,14 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
     };
 
     return (
-        <div className="flex items-center">
-            <FontAwesomeIcon icon={faSearch} />
+        <div className="themeSearch flex items-center gap-2 font-semibold py-3 px-5 rounded w-1/3">
+            <FontAwesomeIcon icon={faSearch} className="mr-2" />
             <input
                 type="text"
                 placeholder="Search for a country..."
                 value={query}
                 onChange={handleInputChange}
-                className="bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-l"
+                className="bg-transparent outline-none w-full"
             />
         </div>
     );

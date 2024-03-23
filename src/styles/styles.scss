@@ -16,19 +16,48 @@ body {
                     }
                 }
             }
+            .themeHome {
+                main {
+                    &.themeMain {
+                        background-color: $very-dark-blue-bg;
+                        .themeFilter {
+                            .themeSearch {
+                                background-color: $dark-blue;
+                                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+
+            }
         }
     }
     &.light {
         .countries-app {
             header {
                 &.themeHeader {
-                    background-color: $very-light-gray;
+                    background-color: $white;
                     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
                     .themeLogoTx {
                         color: $very-dark-blue-tx;
                     }
                     .themeSwitcher {
                         color: $very-dark-blue-tx;
+                    }
+                }
+            }
+            .themeHome {
+                main {
+                    &.themeMain {
+                        background-color: $very-light-gray;
+                        .themeFilter {
+                            .themeSearch {
+                                background-color: $white;
+                                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                                color: $very-dark-blue-tx;
+                            }
+                        }
                     }
                 }
             }
