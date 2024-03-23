@@ -2,7 +2,27 @@
 
 body {
     @include font;
+    &.dark {
+        .countries-app {
+            header {
+                &.header {
+                    background-color: $dark-blue;
+                }
+            }
+        }
+    }
+    &.light {
+        .countries-app {
+            header {
+                &.header {
+                    background-color: $very-light-gray;
+                }
+            }
+        }
+    }
 }
+
+
 
 @media (max-width: 425px) {
 

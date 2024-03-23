@@ -4,5 +4,11 @@ body {
   font-size: 16px;
   line-height: normal;
 }
+body.dark .countries-app header.header {
+  background-color: hsl(209, 23%, 22%);
+}
+body.light .countries-app header.header {
+  background-color: hsl(0, 0%, 98%);
+}
 
 /*# sourceMappingURL=styles.css.map */

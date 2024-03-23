@@ -4,7 +4,7 @@ import { ThemeSwitcher } from "../ThemeSwitcher";
 
 const Header: React.FC = () => {
   return (
-    <header>
+    <header className="header flex justify-between px-12 py-4 items-center">
       <Logo />
       <ThemeSwitcher />
     </header>

@@ -10,7 +10,7 @@ const App: React.FC = () => {
     const countries = getAllCountries();
 
     return (
-        <div>
+        <div className='countries-app'>
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
