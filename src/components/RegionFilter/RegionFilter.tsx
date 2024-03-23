@@ -26,11 +26,11 @@ const RegionFilter: React.FC<RegionFilterProps> = ({ countries, onRegionChange }
     };
 
     return (
-        <div>
+        <div className="themeRegionFilter w-1/6">
             <select
                 value={selectedRegion}
                 onChange={handleRegionChange}
-                className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded"
+                className="flex items-center gap-2 outline-none font-semibold py-3 px-5 rounded cursor-pointer w-full"
             >
                 <option value="">Filter by Region</option>
                 {getUniqueRegions().map((region, index) => (

@@ -66,7 +66,7 @@ const Home: React.FC = () => {
                     <Search onSearch={handleSearch} />
                     <RegionFilter countries={allCountries} onRegionChange={handleRegionChange} />
                 </div>
-                <div className="themeList">
+                <div className="themeList px-12">
                     <CountryList countries={filteredCountries} />
                 </div>
             </main>

@@ -26,6 +26,13 @@ body {
                                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                                 color: $white;
                             }
+                            .themeRegionFilter {
+                                select {
+                                    background-color: $dark-blue;
+                                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                                    color: $white;
+                                }
+                            }
                         }
                     }
                 }
@@ -56,6 +63,13 @@ body {
                                 background-color: $white;
                                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                                 color: $very-dark-blue-tx;
+                            }
+                            .themeRegionFilter {
+                                select {
+                                    background-color: $white;
+                                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                                    color: $very-dark-blue-tx;
+                                }
                             }
                         }
                     }
