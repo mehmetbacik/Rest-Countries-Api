@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 const ThemeSwitcher: React.FC = () => {
   const [theme, setTheme] = useState("light");
@@ -13,9 +15,10 @@ const ThemeSwitcher: React.FC = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded"
+      className="themeSwitcher flex items-center gap-2 bg-transparent font-semibold py-2 px-4"
     >
-      {theme === "light" ? "Dark Mode" : "Light Mode"}
+      {theme === "light" ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
+      {theme === "light" ? "Light Mode" : "Dark Mode"}
     </button>
   );
 };

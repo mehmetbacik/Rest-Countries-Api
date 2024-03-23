@@ -5,8 +5,15 @@ body {
     &.dark {
         .countries-app {
             header {
-                &.header {
+                &.themeHeader {
                     background-color: $dark-blue;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                    .themeLogoTx {
+                        color: $white;
+                    }
+                    .themeSwitcher {
+                        color: $white;
+                    }
                 }
             }
         }
@@ -14,8 +21,15 @@ body {
     &.light {
         .countries-app {
             header {
-                &.header {
+                &.themeHeader {
                     background-color: $very-light-gray;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                    .themeLogoTx {
+                        color: $very-dark-blue-tx;
+                    }
+                    .themeSwitcher {
+                        color: $very-dark-blue-tx;
+                    }
                 }
             }
         }

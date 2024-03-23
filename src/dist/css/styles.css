@@ -4,11 +4,25 @@ body {
   font-size: 16px;
   line-height: normal;
 }
-body.dark .countries-app header.header {
+body.dark .countries-app header.themeHeader {
   background-color: hsl(209, 23%, 22%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
-body.light .countries-app header.header {
+body.dark .countries-app header.themeHeader .themeLogoTx {
+  color: hsl(0, 0%, 100%);
+}
+body.dark .countries-app header.themeHeader .themeSwitcher {
+  color: hsl(0, 0%, 100%);
+}
+body.light .countries-app header.themeHeader {
   background-color: hsl(0, 0%, 98%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+body.light .countries-app header.themeHeader .themeLogoTx {
+  color: hsl(200, 15%, 8%);
+}
+body.light .countries-app header.themeHeader .themeSwitcher {
+  color: hsl(200, 15%, 8%);
 }
 
 /*# sourceMappingURL=styles.css.map */
