@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { Country } from "../../types/country";
 import { CountryDetail } from "../../components/CountryDetail";
+import { Header } from "../../components/Header";
 
 interface CountryDetailPageProps {
   countries: Country[];
@@ -15,8 +16,13 @@ const CountryDetailView: React.FC<CountryDetailPageProps> = ({ countries }) => {
   if (!country) return <div>Country not found</div>;
 
   return (
-    <div>
-      <CountryDetail country={country} countries={countries} />
+    <div className="themeDetail">
+      <Header />
+      <main className="themeMain">
+          <div className="themeDetail">
+            <CountryDetail country={country} countries={countries} />
+          </div>
+      </main>
     </div>
   );
 }
