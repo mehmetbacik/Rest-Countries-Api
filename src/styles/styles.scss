@@ -34,6 +34,13 @@ body {
                                 }
                             }
                         }
+                        .themeList {
+                            .themeListItem {
+                                .themeListContent {
+                                    background-color: $dark-blue;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -68,6 +75,13 @@ body {
                                     background-color: $white;
                                     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                                     color: $very-dark-blue-tx;
+                                }
+                            }
+                        }
+                        .themeList {
+                            .themeListItem {
+                                .themeListContent {
+                                    background-color: $white;
                                 }
                             }
                         }
