@@ -6,7 +6,7 @@ interface CountryListItemProps {
     country: Country;
 }
 
-const MAX_CHARACTERS = 25;
+const MAX_CHARACTERS = 20;
 
 const CountryListItem: React.FC<CountryListItemProps> = ({ country }) => {
     const trimmedName = country.name.length > MAX_CHARACTERS ? `${country.name.substring(0, MAX_CHARACTERS)}...` : country.name;
