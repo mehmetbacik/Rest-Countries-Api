@@ -30,6 +30,27 @@ body.dark .countries-app .themeHome main.themeMain .themeFilter .themeRegionFilt
 body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent {
   background-color: hsl(209, 23%, 22%);
 }
+body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-name {
+  color: hsl(0, 0%, 100%);
+}
+body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-population span {
+  color: hsl(0, 0%, 100%);
+}
+body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-population p {
+  color: hsl(0, 0%, 100%);
+}
+body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-region span {
+  color: hsl(0, 0%, 100%);
+}
+body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-region p {
+  color: hsl(0, 0%, 100%);
+}
+body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-capital span {
+  color: hsl(0, 0%, 100%);
+}
+body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-capital p {
+  color: hsl(0, 0%, 100%);
+}
 body.light .countries-app header.themeHeader {
   background-color: hsl(0, 0%, 100%);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
@@ -55,6 +76,27 @@ body.light .countries-app .themeHome main.themeMain .themeFilter .themeRegionFil
 }
 body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent {
   background-color: hsl(0, 0%, 100%);
+}
+body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-name {
+  color: hsl(200, 15%, 8%);
+}
+body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-population span {
+  color: hsl(200, 15%, 8%);
+}
+body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-population p {
+  color: hsl(200, 15%, 8%);
+}
+body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-region span {
+  color: hsl(200, 15%, 8%);
+}
+body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-region p {
+  color: hsl(200, 15%, 8%);
+}
+body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-capital span {
+  color: hsl(200, 15%, 8%);
+}
+body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-capital p {
+  color: hsl(200, 15%, 8%);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -13,10 +13,19 @@ const CountryListItem: React.FC<CountryListItemProps> = ({ country }) => {
                 <img src={country.flag} alt={country.name} className="w-full h-full object-cover rounded-t-lg" />
             </div>
             <div className='themeListContent rounded-b-lg p-7'>
-                <h2 className="country-name">{country.name}</h2>
-                <p className="country-population">Population: {country.population}</p>
-                <p className="country-region">Region: {country.region}</p>
-                <p className="country-capital">Capital: {country.capital}</p>
+                <h2 className="country-name font-bold text-[25px] mb-3">{country.name}</h2>
+                <div className="country-population flex items-center gap-1 mb-1">
+                    <span className="font-bold">Population:</span> 
+                    <p>{country.population}</p>
+                </div>
+                <div className="country-region flex items-center gap-1 mb-1">
+                    <span className="font-bold">Region:</span> 
+                    <p>{country.region}</p>
+                </div>
+                <div className="country-capital flex items-center gap-1 mb-1">
+                    <span className="font-bold">Capital:</span> 
+                    <p>{country.capital}</p>
+                </div>
             </div>
         </Link>
     );

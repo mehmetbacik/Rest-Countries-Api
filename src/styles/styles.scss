@@ -38,6 +38,33 @@ body {
                             .themeListItem {
                                 .themeListContent {
                                     background-color: $dark-blue;
+                                    .country-name {
+                                        color: $white;
+                                    }
+                                    .country-population {
+                                        span {
+                                            color: $white;
+                                        }
+                                        p {
+                                            color: $white;
+                                        }
+                                    }
+                                    .country-region {
+                                        span {
+                                            color: $white;
+                                        }
+                                        p {
+                                            color: $white;
+                                        }
+                                    }
+                                    .country-capital {
+                                        span {
+                                            color: $white;
+                                        }
+                                        p {
+                                            color: $white;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -82,6 +109,33 @@ body {
                             .themeListItem {
                                 .themeListContent {
                                     background-color: $white;
+                                    .country-name {
+                                        color: $very-dark-blue-tx;
+                                    }
+                                    .country-population {
+                                        span {
+                                            color: $very-dark-blue-tx;
+                                        }
+                                        p {
+                                            color: $very-dark-blue-tx;
+                                        }
+                                    }
+                                    .country-region {
+                                        span {
+                                            color: $very-dark-blue-tx;
+                                        }
+                                        p {
+                                            color: $very-dark-blue-tx;
+                                        }
+                                    }
+                                    .country-capital {
+                                        span {
+                                            color: $very-dark-blue-tx;
+                                        }
+                                        p {
+                                            color: $very-dark-blue-tx;
+                                        }
+                                    }
                                 }
                             }
                         }
