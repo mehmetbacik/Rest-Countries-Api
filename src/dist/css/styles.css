@@ -51,6 +51,9 @@ body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .th
 body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-capital p {
   color: hsl(0, 0%, 100%);
 }
+body.dark .countries-app .themeDetail {
+  background-color: hsl(207, 26%, 17%);
+}
 body.light .countries-app header.themeHeader {
   background-color: hsl(0, 0%, 100%);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
@@ -97,6 +100,9 @@ body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .t
 }
 body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-capital p {
   color: hsl(200, 15%, 8%);
+}
+body.light .countries-app .themeDetail {
+  background-color: hsl(0, 0%, 98%);
 }
 
 /*# sourceMappingURL=styles.css.map */

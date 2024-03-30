@@ -71,6 +71,9 @@ body {
                     }
                 }
             }
+            .themeDetail {
+                background-color: $very-dark-blue-bg;
+            }
         }
     }
     &.light {
@@ -141,6 +144,9 @@ body {
                         }
                     }
                 }
+            }
+            .themeDetail {
+                background-color: $very-light-gray;
             }
         }
     }
