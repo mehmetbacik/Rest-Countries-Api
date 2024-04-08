@@ -2,6 +2,9 @@ import React from "react";
 import { Country } from "../../types/country";
 import { useNavigate } from "react-router-dom";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 interface CountryDetailProps {
   country: Country;
   countries: Country[];
@@ -24,11 +27,12 @@ const CountryDetail: React.FC<CountryDetailProps> = ({ country, countries }) => 
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
+    <div className="container mx-6 md:mx-12 py-8">
       <button
         onClick={handleGoBack}
-        className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mb-4"
+        className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mb-4 flex items-center justify-center gap-2"
       >
+        <FontAwesomeIcon icon={faArrowLeft } /> 
         Back
       </button>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
