@@ -67,6 +67,36 @@ body {
                                     }
                                 }
                             }
+                            .pagination {
+                                li {
+                                    a {
+                                        color: $white;
+                                        border-radius: 5px;
+                                        -webkit-transition: background-color 0.3s;
+                                        transition: background-color 0.3s;
+                                        &:hover {
+                                            background-color: $dark-blue;
+                                            color: $white;
+                                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                        }
+                                    }
+                                    &.active {
+                                        a {
+                                            background-color: $dark-blue;
+                                            color: $white;
+                                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                        }
+                                    }
+                                    &.pagination-button {
+                                        a  {
+                                            padding-top: 0.5rem;
+                                            padding-bottom: 0.5rem;
+                                            padding-left: 0.75rem;
+                                            padding-right: 0.75rem;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -137,6 +167,36 @@ body {
                                         }
                                         p {
                                             color: $very-dark-blue-tx;
+                                        }
+                                    }
+                                }
+                            }
+                            .pagination {
+                                li {
+                                    a {
+                                        color: $very-dark-blue-tx;
+                                        border-radius: 5px;
+                                        -webkit-transition: background-color 0.3s;
+                                        transition: background-color 0.3s;
+                                        &:hover {
+                                            background-color: $white;
+                                            color: $very-dark-blue-tx;
+                                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                        }
+                                    }
+                                    &.active {
+                                        a {
+                                            background-color: $white;
+                                            color: $very-dark-blue-tx;
+                                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                        }
+                                    }
+                                    &.pagination-button {
+                                        a  {
+                                            padding-top: 0.5rem;
+                                            padding-bottom: 0.5rem;
+                                            padding-left: 0.75rem;
+                                            padding-right: 0.75rem;
                                         }
                                     }
                                 }

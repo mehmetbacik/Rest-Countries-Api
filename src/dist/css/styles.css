@@ -51,6 +51,28 @@ body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .th
 body.dark .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-capital p {
   color: hsl(0, 0%, 100%);
 }
+body.dark .countries-app .themeHome main.themeMain .themeList .pagination li a {
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+body.dark .countries-app .themeHome main.themeMain .themeList .pagination li a:hover {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body.dark .countries-app .themeHome main.themeMain .themeList .pagination li.active a {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body.dark .countries-app .themeHome main.themeMain .themeList .pagination li.pagination-button a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 body.dark .countries-app .themeDetail {
   background-color: hsl(207, 26%, 17%);
 }
@@ -100,6 +122,28 @@ body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .t
 }
 body.light .countries-app .themeHome main.themeMain .themeList .themeListItem .themeListContent .country-capital p {
   color: hsl(200, 15%, 8%);
+}
+body.light .countries-app .themeHome main.themeMain .themeList .pagination li a {
+  color: hsl(200, 15%, 8%);
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+body.light .countries-app .themeHome main.themeMain .themeList .pagination li a:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body.light .countries-app .themeHome main.themeMain .themeList .pagination li.active a {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body.light .countries-app .themeHome main.themeMain .themeList .pagination li.pagination-button a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 body.light .countries-app .themeDetail {
   background-color: hsl(0, 0%, 98%);

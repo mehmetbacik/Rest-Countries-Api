@@ -6,6 +6,8 @@ import { RegionFilter } from "../../components/RegionFilter";
 import { Search } from "../../components/Search";
 import { Country } from "../../types/country";
 import ReactPaginate from "react-paginate";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const PAGE_SIZE = 12;
 
@@ -84,7 +86,7 @@ const Home: React.FC = () => {
   return (
     <div className="themeHome">
       <Header />
-      <main className="themeMain">
+      <main className="themeMain min-h-screen">
         <div className="themeFilter flex justify-between px-12 py-10 items-center">
           <Search onSearch={handleSearch} />
           <RegionFilter
@@ -97,12 +99,21 @@ const Home: React.FC = () => {
             countries={filteredCountries.slice(offset, offset + PAGE_SIZE)}
           />
           <ReactPaginate
-            previousLabel={"Previous"}
-            nextLabel={"Next"}
+            previousLabel={<FontAwesomeIcon icon={faChevronLeft} />}
+            nextLabel={<FontAwesomeIcon icon={faChevronRight} />}
+            breakLabel={"..."}
             pageCount={pageCount}
             onPageChange={handlePageClick}
-            containerClassName={"pagination"}
+            containerClassName={"pagination flex justify-center mt-12"}
+            pageClassName={"mx-2 cursor-pointer"}
+            pageLinkClassName={
+              "px-3 py-2"
+            }
             activeClassName={"active"}
+            breakClassName={"mx-2"}
+            previousClassName={'pagination-button'}
+            nextClassName={'pagination-button'}
+            disabledClassName={"opacity-50 cursor-not-allowed"}
           />
         </div>
       </main>
