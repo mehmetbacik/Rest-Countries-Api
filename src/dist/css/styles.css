@@ -76,6 +76,15 @@ body.dark .countries-app .themeHome main.themeMain .themeList .pagination li.pag
 body.dark .countries-app .themeDetail {
   background-color: hsl(207, 26%, 17%);
 }
+body.dark .countries-app .themeDetail main.themeMain .themeDetail .container .detail-header {
+  margin-top: 50px;
+  margin-bottom: 82px;
+}
+body.dark .countries-app .themeDetail main.themeMain .themeDetail .container .detail-header .back-button {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 body.light .countries-app header.themeHeader {
   background-color: hsl(0, 0%, 100%);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
@@ -147,6 +156,15 @@ body.light .countries-app .themeHome main.themeMain .themeList .pagination li.pa
 }
 body.light .countries-app .themeDetail {
   background-color: hsl(0, 0%, 98%);
+}
+body.light .countries-app .themeDetail main.themeMain .themeDetail .container .detail-header {
+  margin-top: 50px;
+  margin-bottom: 82px;
+}
+body.light .countries-app .themeDetail main.themeMain .themeDetail .container .detail-header .back-button {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */

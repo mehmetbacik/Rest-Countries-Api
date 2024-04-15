@@ -103,6 +103,23 @@ body {
             }
             .themeDetail {
                 background-color: $very-dark-blue-bg;
+                main  {
+                    &.themeMain {
+                        .themeDetail {
+                            .container {
+                                .detail-header {
+                                    margin-top: 50px;
+                                    margin-bottom: 82px;
+                                    .back-button {
+                                        background-color: $dark-blue;
+                                        color: $white;
+                                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -207,6 +224,23 @@ body {
             }
             .themeDetail {
                 background-color: $very-light-gray;
+                main  {
+                    &.themeMain {
+                        .themeDetail {
+                            .container {
+                                .detail-header {
+                                    margin-top: 50px;
+                                    margin-bottom: 82px;
+                                    .back-button {
+                                        background-color: $white;
+                                        color: $very-dark-blue-tx;
+                                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

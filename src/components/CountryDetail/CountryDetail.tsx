@@ -10,7 +10,10 @@ interface CountryDetailProps {
   countries: Country[];
 }
 
-const CountryDetail: React.FC<CountryDetailProps> = ({ country, countries }) => {
+const CountryDetail: React.FC<CountryDetailProps> = ({
+  country,
+  countries,
+}) => {
   const navigate = useNavigate();
 
   const handleGoBack = () => {
@@ -28,13 +31,15 @@ const CountryDetail: React.FC<CountryDetailProps> = ({ country, countries }) => 
 
   return (
     <div className="container mx-6 md:mx-12 py-8">
-      <button
-        onClick={handleGoBack}
-        className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mb-4 flex items-center justify-center gap-2"
-      >
-        <FontAwesomeIcon icon={faArrowLeft } /> 
-        Back
-      </button>
+      <div className="detail-header">
+        <button
+          onClick={handleGoBack}
+          className="back-button py-2 px-10 rounded flex items-center justify-center gap-2"
+        >
+          <FontAwesomeIcon icon={faArrowLeft} />
+          Back
+        </button>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <img
