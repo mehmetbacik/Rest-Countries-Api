@@ -85,6 +85,15 @@ body.dark .countries-app .themeDetail main.themeMain .themeDetail .container .de
   color: hsl(0, 0%, 100%);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+body.dark .countries-app .themeDetail main.themeMain .themeDetail .container .detail-content {
+  gap: 80px;
+}
+body.dark .countries-app .themeDetail main.themeMain .themeDetail .container .detail-content .detail-content-picture {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body.dark .countries-app .themeDetail main.themeMain .themeDetail .container .detail-content .detail-content-description {
+  color: hsl(0, 0%, 100%);
+}
 body.light .countries-app header.themeHeader {
   background-color: hsl(0, 0%, 100%);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
@@ -165,6 +174,15 @@ body.light .countries-app .themeDetail main.themeMain .themeDetail .container .d
   background-color: hsl(0, 0%, 100%);
   color: hsl(200, 15%, 8%);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body.light .countries-app .themeDetail main.themeMain .themeDetail .container .detail-content {
+  gap: 80px;
+}
+body.light .countries-app .themeDetail main.themeMain .themeDetail .container .detail-content .detail-content-picture {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body.light .countries-app .themeDetail main.themeMain .themeDetail .container .detail-content .detail-content-description {
+  color: hsl(200, 15%, 8%);
 }
 
 /*# sourceMappingURL=styles.css.map */
