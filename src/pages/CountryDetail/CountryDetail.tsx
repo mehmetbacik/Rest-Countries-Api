@@ -19,7 +19,7 @@ const CountryDetailView: React.FC<CountryDetailPageProps> = ({ countries }) => {
     <div className="themeDetail">
       <Header />
       <main className="themeMain">
-          <div className="themeDetail min-h-screen">
+          <div className="themeDetail min-h-screen flex justify-center items-center">
             <CountryDetail country={country} countries={countries} />
           </div>
       </main>

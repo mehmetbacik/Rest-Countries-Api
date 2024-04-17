@@ -49,47 +49,55 @@ const CountryDetail: React.FC<CountryDetailProps> = ({
           />
         </div>
         <div className="detail-content-description">
-          <h2 className="text-4xl font-bold mb-6 country-name">{country.name}</h2>
-          <div className="flex flex-row mb-10">
+          <h2 className="text-4xl font-bold mb-6 country-name">
+            {country.name}
+          </h2>
+          <div className="flex flex-row justify-between 2xl:justify-start 2xl:gap-12 mb-10">
             <div>
-              <p className="mr-2 mb-2">
-                <span className="font-semibold">Native Name:</span>{" "}
+              <p className="mr-2 mb-2 font-light">
+                <span className="font-bold">Native Name:</span>{" "}
                 {country.nativeName}
               </p>
-              <p className="mr-2 mb-2">
-                <span className="font-semibold">Population:</span>{" "}
+              <p className="mr-2 mb-2 font-light">
+                <span className="font-bold">Population:</span>{" "}
                 {country.population.toLocaleString()}
               </p>
-              <p className="mr-2 mb-2">
-                <span className="font-semibold">Region:</span> {country.region}
+              <p className="mr-2 mb-2 font-light">
+                <span className="font-bold">Region:</span> {country.region}
               </p>
-              <p className="mr-2 mb-2">
-                <span className="font-semibold">Subregion:</span>{" "}
+              <p className="mr-2 mb-2 font-light">
+                <span className="font-bold">Subregion:</span>{" "}
                 {country.subregion}
               </p>
-              <p className="mr-2 mb-2">
-                <span className="font-semibold">Capital:</span> {country.capital}
+              <p className="mr-2 mb-2 font-light">
+                <span className="font-bold">Capital:</span> {country.capital}
               </p>
             </div>
             <div>
-              <p className="mr-2 mb-2">
-                <span className="font-semibold">Top Level Domain:</span>{" "}
+              <p className="mr-2 mb-2 font-light">
+                <span className="font-bold">Top Level Domain:</span>{" "}
                 {country.topLevelDomain.join(", ")}
               </p>
-              <p className="mr-2 mb-2">
-                <span className="font-semibold">Currencies:</span>{" "}
+              <p className="mr-2 mb-2 font-light">
+                <span className="font-bold">Currencies:</span>{" "}
                 {country.currencies.map((currency) => currency.name).join(", ")}
               </p>
-              <p className="mr-2 mb-2">
-                <span className="font-semibold">Languages:</span>{" "}
+              <p className="mr-2 mb-2 font-light">
+                <span className="font-bold">Languages:</span>{" "}
                 {country.languages.map((language) => language.name).join(", ")}
               </p>
             </div>
           </div>
           <div className="flex flex-wrap mb-2">
-            <p className="mr-2 mb-2">
-              <span className="font-semibold">Border Countries:</span>{" "}
-              {getBorderCountryNames().join(", ") || "None"}
+            <p className="mr-2 mb-2 font-light flex items-center gap-2">
+              <span className="font-bold">Border Countries:</span>{" "}
+              <div className="flex flex-wrap gap-2">
+                {getBorderCountryNames().map((borderCountryName, index) => (
+                  <div key={index} className="border-country px-3 py-1 rounded">
+                    {borderCountryName}
+                  </div>
+                ))}
+              </div>
             </p>
           </div>
         </div>

@@ -94,6 +94,10 @@ body.dark .countries-app .themeDetail main.themeMain .themeDetail .container .de
 body.dark .countries-app .themeDetail main.themeMain .themeDetail .container .detail-content .detail-content-description {
   color: hsl(0, 0%, 100%);
 }
+body.dark .countries-app .themeDetail main.themeMain .themeDetail .container .detail-content .detail-content-description .border-country {
+  background-color: hsl(209, 23%, 22%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 body.light .countries-app header.themeHeader {
   background-color: hsl(0, 0%, 100%);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
