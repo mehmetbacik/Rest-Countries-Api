@@ -21,7 +21,7 @@ const ThemeSwitcher: React.FC = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="themeSwitcher flex items-center gap-2 bg-transparent font-semibold py-2 px-4"
+      className="themeSwitcher flex items-center gap-2 bg-transparent font-semibold py-2 px-0 md:px-4 text-sm md:text-lg"
     >
       {theme === "light" ? (
         <FontAwesomeIcon icon={faSun} />

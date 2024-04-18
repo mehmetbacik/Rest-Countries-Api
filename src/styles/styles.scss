@@ -257,6 +257,10 @@ body {
                                     }
                                     .detail-content-description {
                                         color: $very-dark-blue-tx;
+                                        .border-country {
+                                            background-color: $very-light-gray;
+                                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                        }
                                     }
                                 }
                             }

@@ -49,11 +49,11 @@ const CountryDetail: React.FC<CountryDetailProps> = ({
           />
         </div>
         <div className="detail-content-description">
-          <h2 className="text-4xl font-bold mb-6 country-name">
+          <h2 className="text-xl md:text-4xl font-bold mb-6 country-name">
             {country.name}
           </h2>
-          <div className="flex flex-row justify-between 2xl:justify-start 2xl:gap-12 mb-10">
-            <div>
+          <div className="flex flex-col md:flex-row justify-between 2xl:justify-start 2xl:gap-12 mb-10">
+            <div className="mb-6 md:mb-0">
               <p className="mr-2 mb-2 font-light">
                 <span className="font-bold">Native Name:</span>{" "}
                 {country.nativeName}
@@ -89,7 +89,7 @@ const CountryDetail: React.FC<CountryDetailProps> = ({
             </div>
           </div>
           <div className="flex flex-wrap mb-2">
-            <p className="mr-2 mb-2 font-light flex items-center gap-2">
+            <p className="mr-2 mb-2 font-light flex flex-col md:flex-row items-start md:items-center gap-2">
               <span className="font-bold">Border Countries:</span>{" "}
               <div className="flex flex-wrap gap-2">
                 {getBorderCountryNames().map((borderCountryName, index) => (

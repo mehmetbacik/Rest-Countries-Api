@@ -188,5 +188,9 @@ body.light .countries-app .themeDetail main.themeMain .themeDetail .container .d
 body.light .countries-app .themeDetail main.themeMain .themeDetail .container .detail-content .detail-content-description {
   color: hsl(200, 15%, 8%);
 }
+body.light .countries-app .themeDetail main.themeMain .themeDetail .container .detail-content .detail-content-description .border-country {
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 /*# sourceMappingURL=styles.css.map */
