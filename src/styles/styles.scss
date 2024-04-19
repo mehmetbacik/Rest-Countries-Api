@@ -271,3 +271,51 @@ body {
         }
     }
 }
+
+@media (max-width: 320px) {
+    
+body {
+    &.dark {
+        .countries-app {
+            .themeDetail {
+                main  {
+                    &.themeMain {
+                        .themeDetail {
+                            .container {
+                                .detail-header {
+                                    margin-top: 0px;
+                                    margin-bottom: 35px;
+                                }
+                                .detail-content {
+                                    gap:30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.light {
+        .countries-app {
+            .themeDetail {
+                main  {
+                    &.themeMain {
+                        .themeDetail {
+                            .container {
+                                .detail-header {
+                                    margin-top: 0px;
+                                    margin-bottom: 35px;
+                                }
+                                .detail-content {
+                                    gap:30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
