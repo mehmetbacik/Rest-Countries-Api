@@ -87,7 +87,7 @@ const Home: React.FC = () => {
     <div className="themeHome">
       <Header />
       <main className="themeMain min-h-screen">
-        <div className="themeFilter flex justify-between px-12 py-10 items-center">
+        <div className="themeFilter flex flex-col md:flex-row gap-6 md:gap-0 justify-between px-12 py-10 items-center">
           <Search onSearch={handleSearch} />
           <RegionFilter
             countries={allCountries}

@@ -17,7 +17,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
     };
 
     return (
-        <div className="themeSearch flex items-center gap-2 font-semibold py-3 px-5 rounded w-1/3">
+        <div className="themeSearch flex items-center gap-2 font-semibold py-3 px-5 rounded w-full md:w-1/3">
             <FontAwesomeIcon icon={faSearch} className="mr-2" />
             <input
                 type="text"

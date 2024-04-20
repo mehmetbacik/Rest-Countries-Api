@@ -26,7 +26,7 @@ const RegionFilter: React.FC<RegionFilterProps> = ({ countries, onRegionChange }
     };
 
     return (
-        <div className="themeRegionFilter w-1/6">
+        <div className="themeRegionFilter w-full md:w-1/6">
             <select
                 value={selectedRegion}
                 onChange={handleRegionChange}

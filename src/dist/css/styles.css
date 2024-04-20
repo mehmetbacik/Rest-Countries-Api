@@ -193,7 +193,7 @@ body.light .countries-app .themeDetail main.themeMain .themeDetail .container .d
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   body.dark .countries-app .themeDetail main.themeMain .themeDetail .container .detail-header {
     margin-top: 0px;
     margin-bottom: 35px;
