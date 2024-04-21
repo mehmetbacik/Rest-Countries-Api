@@ -6,10 +6,22 @@ interface CountryListItemProps {
     country: Country;
 }
 
-const MAX_CHARACTERS = 20;
+const MAX_CHARACTERS_LARGE = 20;
+const MAX_CHARACTERS_MEDIUM = 10;
+const MAX_CHARACTERS_SMALL = 20;
 
 const CountryListItem: React.FC<CountryListItemProps> = ({ country }) => {
-    const trimmedName = country.name.length > MAX_CHARACTERS ? `${country.name.substring(0, MAX_CHARACTERS)}...` : country.name;
+    let maxCharacters = MAX_CHARACTERS_LARGE;
+
+    if (window.innerWidth <= 768) {
+        maxCharacters = MAX_CHARACTERS_MEDIUM;
+    }
+    if (window.innerWidth <= 480) {
+        maxCharacters = MAX_CHARACTERS_SMALL;
+    }
+
+    const trimmedName = country.name.length > maxCharacters ? `${country.name.substring(0, maxCharacters)}...` : country.name;
+
 
     return (
         <Link to={`/country/${country.alpha3Code}`} className="themeListItem shadow-md">
