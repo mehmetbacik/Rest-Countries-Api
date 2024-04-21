@@ -1,4 +1,4 @@
-# Rest Countries API Project
+# Rest Countries API
 
 This project is a web application that lists countries' information and displays their details using the Rest Countries API. The project is developed using modern React technologies. Tailwind CSS and CSS(SCSS) were used for interface design.
 
