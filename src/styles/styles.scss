@@ -273,21 +273,74 @@ body {
 }
 
 @media (max-width: 425px) {
-    
-body {
-    &.dark {
-        .countries-app {
-            .themeDetail {
-                main  {
-                    &.themeMain {
-                        .themeDetail {
-                            .container {
-                                .detail-header {
-                                    margin-top: 0px;
-                                    margin-bottom: 35px;
+    body {
+        &.dark {
+            .countries-app {
+                .themeHome {
+                    main {
+                        &.themeMain {
+                            .themeList {
+                                .pagination {
+                                    li {
+                                        &.mx-2 {
+                                            margin-left: 0;
+                                            margin-right: 0;
+                                        }
+                                    }
                                 }
-                                .detail-content {
-                                    gap:30px;
+                            }
+                        }
+                    }
+                }
+                .themeDetail {
+                    main  {
+                        &.themeMain {
+                            .themeDetail {
+                                .container {
+                                    .detail-header {
+                                        margin-top: 0px;
+                                        margin-bottom: 35px;
+                                    }
+                                    .detail-content {
+                                        gap:30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.light {
+            .countries-app {
+                .themeHome {
+                    main {
+                        &.themeMain {
+                            .themeList {
+                                .pagination {
+                                    li {
+                                        &.mx-2 {
+                                            margin-left: 0;
+                                            margin-right: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .themeDetail {
+                    main  {
+                        &.themeMain {
+                            .themeDetail {
+                                .container {
+                                    .detail-header {
+                                        margin-top: 0px;
+                                        margin-bottom: 35px;
+                                    }
+                                    .detail-content {
+                                        gap:30px;
+                                    }
                                 }
                             }
                         }
@@ -296,26 +349,4 @@ body {
             }
         }
     }
-    &.light {
-        .countries-app {
-            .themeDetail {
-                main  {
-                    &.themeMain {
-                        .themeDetail {
-                            .container {
-                                .detail-header {
-                                    margin-top: 0px;
-                                    margin-bottom: 35px;
-                                }
-                                .detail-content {
-                                    gap:30px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 }
